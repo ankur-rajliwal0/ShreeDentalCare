@@ -53,9 +53,9 @@ export default function DoctorProfile({ onOpenAppointment }) {
               {/* Main Photo Frame */}
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
                 <img
-                  src="/images/doctor.jpg"
+                  src="/images/dr-shrikant-sharma.jpg"
                   alt="Dr. Shrikant Sharma - BDS, MDS Ortho, Certified Implantologist"
-                  className="w-full h-[460px] sm:h-[520px] object-cover object-top"
+                  className="w-full h-[460px] sm:h-[520px] object-cover object-top hover:scale-105 transition-transform duration-500"
                 />
               </div>
 

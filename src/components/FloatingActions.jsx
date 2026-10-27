@@ -1,5 +1,6 @@
 import React from 'react'
-import { Phone, MessageCircle, Calendar } from 'lucide-react'
+import { Phone, Calendar } from 'lucide-react'
+import WhatsAppIcon from './WhatsAppIcon'
 
 export default function FloatingActions({ onOpenAppointment }) {
   return (
@@ -10,10 +11,11 @@ export default function FloatingActions({ onOpenAppointment }) {
           href="https://wa.me/918107879056?text=Hello%20Dr.%20Shrikant%20Sharma,%20I%20would%20like%20to%20consult%20at%20Shree%20Dental%20Care"
           target="_blank"
           rel="noreferrer"
-          className="group flex items-center gap-2.5 p-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-xl shadow-emerald-950/20 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+          aria-label="Chat with Dr. Shrikant Sharma on WhatsApp"
+          className="group flex items-center gap-2.5 p-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-xl shadow-emerald-950/20 hover:shadow-2xl transition-all duration-300 hover:scale-105"
         >
           <div className="relative">
-            <MessageCircle className="w-6 h-6" />
+            <WhatsAppIcon className="w-6 h-6 text-white" />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full animate-ping" />
           </div>
           <span className="text-xs font-bold pr-1 max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap">
@@ -39,7 +41,7 @@ export default function FloatingActions({ onOpenAppointment }) {
             rel="noreferrer"
             className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-bold active:scale-95 transition-all"
           >
-            <MessageCircle className="w-4 h-4 text-emerald-600 mb-0.5" />
+            <WhatsAppIcon className="w-4 h-4 text-emerald-600 mb-0.5" />
             <span>WhatsApp</span>
           </a>
 

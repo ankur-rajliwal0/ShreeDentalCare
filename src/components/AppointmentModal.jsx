@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { X, Calendar, Clock, CheckCircle, MessageCircle, Phone, Sparkles, User, AlertCircle } from 'lucide-react'
+import { X, Calendar, CheckCircle, Phone, User } from 'lucide-react'
+import WhatsAppIcon from './WhatsAppIcon'
 
 export default function AppointmentModal({ isOpen, onClose, initialTreatment = '' }) {
   const [formData, setFormData] = useState({
@@ -93,14 +94,19 @@ export default function AppointmentModal({ isOpen, onClose, initialTreatment = '
       >
         {/* Header */}
         <div className="px-6 py-4 bg-gradient-to-r from-sky-600 via-sky-500 to-cyan-600 text-white flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <Calendar className="w-5 h-5 text-sky-100" />
+          <div className="flex items-center gap-3">
+            <img
+              src="/images/dr-shrikant-sharma.jpg"
+              alt="Dr. Shrikant Sharma"
+              className="w-10 h-10 rounded-full object-cover object-top border-2 border-white/80 shadow-md flex-shrink-0"
+            />
             <div>
               <h3 className="text-base sm:text-lg font-bold leading-tight">
                 Schedule Priority Appointment
               </h3>
-              <p className="text-xs text-sky-100">
-                Dr. Shrikant Sharma • Shree Dental Care, Jaipur
+              <p className="text-xs text-sky-100 flex items-center gap-1.5 mt-0.5">
+                <span className="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+                Dr. Shrikant Sharma • Shree Dental Care
               </p>
             </div>
           </div>
@@ -164,7 +170,7 @@ export default function AppointmentModal({ isOpen, onClose, initialTreatment = '
                   rel="noreferrer"
                   className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-colors"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4 text-white" />
                   <span>Send Confirmation to Clinic WhatsApp</span>
                 </a>
 

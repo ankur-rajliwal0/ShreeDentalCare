@@ -1,5 +1,6 @@
 import React from 'react'
-import { Calendar, Phone, Sparkles, CheckCircle, ShieldCheck, HeartPulse, Award, MessageCircle, ArrowRight } from 'lucide-react'
+import { Calendar, Sparkles, CheckCircle, ShieldCheck, HeartPulse, Award, ArrowRight } from 'lucide-react'
+import WhatsAppIcon from './WhatsAppIcon'
 
 export default function Hero({ onOpenAppointment }) {
   return (
@@ -52,7 +53,7 @@ export default function Hero({ onOpenAppointment }) {
                 rel="noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 text-base font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100/90 rounded-2xl border border-emerald-300 shadow-sm transition-all duration-200 hover:-translate-y-0.5"
               >
-                <MessageCircle className="w-5 h-5 text-emerald-600" />
+                <WhatsAppIcon className="w-5 h-5 text-emerald-600" />
                 <span>WhatsApp: 8107879056</span>
               </a>
             </div>
@@ -122,9 +123,9 @@ export default function Hero({ onOpenAppointment }) {
               {/* Floating Doctor Badge Card (Top Left) */}
               <div className="absolute -top-5 -left-4 sm:-left-8 p-3 rounded-2xl bg-white/95 backdrop-blur-md border border-sky-200/80 shadow-xl shadow-sky-900/10 flex items-center gap-3 animate-subtle-pulse">
                 <img
-                  src="/images/doctor.jpg"
+                  src="/images/dr-shrikant-sharma.jpg"
                   alt="Dr. Shrikant Sharma"
-                  className="w-12 h-12 rounded-xl object-cover border-2 border-sky-500"
+                  className="w-12 h-12 rounded-xl object-cover object-top border-2 border-sky-500 shadow-sm"
                 />
                 <div className="text-left">
                   <p className="text-xs font-bold text-slate-900 leading-tight">Dr. Shrikant Sharma</p>

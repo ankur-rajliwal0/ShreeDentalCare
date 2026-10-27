@@ -157,8 +157,12 @@ export default function SmileGallery({ onOpenAppointment }) {
                   <span className="px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">
                     {currentCase.badge}
                   </span>
-                  <div className="flex items-center gap-1 text-xs font-bold text-slate-500">
-                    <ShieldCheck className="w-4 h-4 text-sky-600" />
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-100">
+                    <img
+                      src="/images/dr-shrikant-sharma.jpg"
+                      alt="Dr. Shrikant Sharma"
+                      className="w-5 h-5 rounded-full object-cover object-top border border-sky-400"
+                    />
                     <span>Dr. Shrikant Sharma</span>
                   </div>
                 </div>

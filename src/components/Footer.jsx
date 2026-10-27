@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import { MapPin, Phone, Clock, MessageCircle, Heart, ShieldCheck, ArrowUp } from 'lucide-react'
+import { MapPin, Phone, Clock, Heart, ShieldCheck, ArrowUp } from 'lucide-react'
 
 export default function Footer({ onOpenAppointment }) {
   const scrollToTop = () => {

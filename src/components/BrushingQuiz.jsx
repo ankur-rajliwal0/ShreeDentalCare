@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { AlertCircle, CheckCircle, Info, Sparkles, MessageCircle, Calendar, ArrowRight, ShieldAlert } from 'lucide-react'
+import { AlertCircle, CheckCircle, Sparkles, Calendar, ShieldAlert } from 'lucide-react'
+import WhatsAppIcon from './WhatsAppIcon'
 
 export default function BrushingQuiz({ onOpenAppointment }) {
   const [selectedSymptoms, setSelectedSymptoms] = useState([])
@@ -175,17 +176,21 @@ export default function BrushingQuiz({ onOpenAppointment }) {
                   rel="noreferrer"
                   className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-colors"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4 text-white" />
                   <span>Send Results to Dr. Shrikant on WhatsApp</span>
                 </a>
               </div>
             </div>
 
             {/* Doctor Note */}
-            <div className="mt-6 flex items-center gap-3 text-xs text-slate-500 bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-              <Info className="w-4 h-4 text-sky-600 flex-shrink-0" />
+            <div className="mt-6 flex items-start sm:items-center gap-3 text-xs text-slate-600 bg-sky-50/70 p-3.5 rounded-xl border border-sky-100">
+              <img
+                src="/images/dr-shrikant-sharma.jpg"
+                alt="Dr. Shrikant Sharma"
+                className="w-10 h-10 rounded-full object-cover object-top border-2 border-sky-500 flex-shrink-0 shadow-sm"
+              />
               <span>
-                <strong>Clinical Tip by Dr. Shrikant Sharma:</strong> Always use a soft or ultra-soft bristled toothbrush and replace it every 3 months. Brush at a 45-degree angle using circular vibrations instead of hard horizontal scrubbing.
+                <strong className="text-slate-900">Clinical Tip by Dr. Shrikant Sharma:</strong> Always use a soft or ultra-soft bristled toothbrush and replace it every 3 months. Brush at a 45-degree angle using circular vibrations instead of hard horizontal scrubbing.
               </span>
             </div>
 
